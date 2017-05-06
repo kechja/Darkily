@@ -1,0 +1,101 @@
+/******************************************************************************/
+/* READ ME
+/******************************************************************************/
+/*
+
+  HOW TO USE THIS STYLESHEET FILE:
+    THIS FILE IS PREPROPROCESSED BY SASS
+    DO NOT EDIT THE application.css FILE DIRECTLY, UNLESS YOU INTEND DISCONTINUE
+      USING SASS.
+    INSTEAD EDIT application.scss 
+    RUN "sass --watch panther.scss" TO AUTOMATICALLY WRITE UPDATE THE CSS FILE
+    RUN "sass --watch <a directory>" TO AUTOMATICALLY UPDATE ENTIRE DIRECTORIES
+    BASIC DOCUMENTATION FOR SASS LIVES HERE:  http://sass-lang.com/guide
+
+  FONTS-FAMILIES 
+    SINCE SO FEW FONTS ARE USED DO NOT INDICATE THE FONT AFTER AN INDIVIDUAL SELECTOR
+    ADD THE SELECTOR TO THE SELECTOR LIST BEFORE THE FONT-FAMILY
+*/
+
+/******************************************************************************/
+/* Resets */
+/******************************************************************************/
+
+* { padding: 0; margin: 0; }
+.row:after { content: ""; display: table; clear: both; }
+.clear { clear: both; }
+
+/******************************************************************************/
+/* Colors */
+/******************************************************************************/
+
+// Molokai
+$mol_black:      rgb(13,13,13);
+$mol_white:      rgb(248,248,242);
+
+// Molokai Pop
+$mol_orange:     rgb(254,164,38);
+$mol_yellow:     rgb(230,218,123);
+$mol_green:      rgb(167,224,64);
+$mol_blue:       rgb(107,217,237);
+$mol_magenta:    rgb(246,45,115);
+$mol_purple:     rgb(174,133,252);
+
+// Bootstrap 
+$boot_primary:   rgb(51,122,183);
+$boot_success:   rgb(92,184,92);
+$boot_info:      rgb(91,192,222);
+$boot_warning:   rgb(240,173,78);
+$boot_danger:    rgb(217,83,79);
+
+// Git Inversed 
+$git_black:      rgb(15,15,23);
+$git_text:       rgb(177,187,195);
+
+// Panther
+$text:           rgb(190,190,190);
+$danger:         rgb(240,93,79);
+
+body { background-color: $mol_black; color: $text; }
+h1 { color: white; }
+h2, h3, h4, h5, h6  { color: rgb(210,210,210); }
+pre { background-color: lighten($mol_black, 10%); color: lighten($text, 10%); border-radius: 10px; }
+code { background-color: lighten($mol_black, 10%); color: lighten($text, 10%); border-radius: 10px; padding: 0 5px; }
+th { text-decoration: underline; }
+tr:nth-child(odd) td { background-color: lighten($mol_black, 10%); }b
+.pop1 { color: $mol_orange; }
+.pop2 { color: $mol_yellow; }
+.pop3 { color: $mol_green; }
+.pop4 { color: $mol_blue; }
+.pop5 { color: $mol_magenta; }
+.pop6 { color: $mol_purple; }
+
+$inline-border-radius:  3px;
+.success   { background-color: darken($mol_green, 10%);    color: $mol_black; border-radius: $inline-border-radius; padding: 0 3px; }
+.failure   { background-color: $danger;                    color: white; border-radius: $inline-border-radius; padding: 0 3px; }
+.warning   { background-color: $mol_orange;                color: $mol_black; border-radius: $inline-border-radius; padding: 0 3px; }
+.highlight { background-color: darken(yellow, 10%);        color: $mol_black; border-radius: $inline-border-radius; padding: 0 3px; }
+
+
+/******************************************************************************/
+/* Fonts */
+/******************************************************************************/
+
+body { font-family: "Cochin"; font-size: 19px; }
+code, table { font-family: "Andale Mono", monospace; font-size: 17px; }
+#placeholder { font-family: "Century Gothic", verdana, arial, helvetica, sans-serif; }
+.handwriting { font-family: "Handwriting - Dakota", cursive, sans-serif; }
+$big_font:     36px;
+$med_big_font: 24px;
+$small_font:   13px;
+
+/******************************************************************************/
+/* Layout */
+/******************************************************************************/
+
+body { padding: 10px 20px; }
+h1, h2, h3, table { margin: 7px 0 0 0; }
+th, td { padding: 5px 5px; }
+pre { margin: 5px 0; }
+
+

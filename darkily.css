@@ -1,0 +1,139 @@
+/******************************************************************************/
+/* READ ME
+/******************************************************************************/
+/*
+
+  HOW TO USE THIS STYLESHEET FILE:
+    THIS FILE IS PREPROPROCESSED BY SASS
+    DO NOT EDIT THE application.css FILE DIRECTLY, UNLESS YOU INTEND DISCONTINUE
+      USING SASS.
+    INSTEAD EDIT application.scss 
+    RUN "sass --watch panther.scss" TO AUTOMATICALLY WRITE UPDATE THE CSS FILE
+    RUN "sass --watch <a directory>" TO AUTOMATICALLY UPDATE ENTIRE DIRECTORIES
+    BASIC DOCUMENTATION FOR SASS LIVES HERE:  http://sass-lang.com/guide
+
+  FONTS-FAMILIES 
+    SINCE SO FEW FONTS ARE USED DO NOT INDICATE THE FONT AFTER AN INDIVIDUAL SELECTOR
+    ADD THE SELECTOR TO THE SELECTOR LIST BEFORE THE FONT-FAMILY
+*/
+/******************************************************************************/
+/* Resets */
+/******************************************************************************/
+* {
+  padding: 0;
+  margin: 0; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.clear {
+  clear: both; }
+
+/******************************************************************************/
+/* Colors */
+/******************************************************************************/
+body {
+  background-color: #0d0d0d;
+  color: #bebebe; }
+
+h1 {
+  color: white; }
+
+h2, h3, h4, h5, h6 {
+  color: #d2d2d2; }
+
+pre {
+  background-color: #272727;
+  color: #d8d8d8;
+  border-radius: 10px; }
+
+code {
+  background-color: #272727;
+  color: #d8d8d8;
+  border-radius: 10px;
+  padding: 0 5px; }
+
+th {
+  text-decoration: underline; }
+
+tr:nth-child(odd) td {
+  background-color: #272727; }
+
+b
+.pop1 {
+  color: #fea426; }
+
+.pop2 {
+  color: #e6da7b; }
+
+.pop3 {
+  color: #a7e040; }
+
+.pop4 {
+  color: #6bd9ed; }
+
+.pop5 {
+  color: #f62d73; }
+
+.pop6 {
+  color: #ae85fc; }
+
+.success {
+  background-color: #8fcc21;
+  color: #0d0d0d;
+  border-radius: 3px;
+  padding: 0 3px; }
+
+.failure {
+  background-color: #f05d4f;
+  color: white;
+  border-radius: 3px;
+  padding: 0 3px; }
+
+.warning {
+  background-color: #fea426;
+  color: #0d0d0d;
+  border-radius: 3px;
+  padding: 0 3px; }
+
+.highlight {
+  background-color: #cccc00;
+  color: #0d0d0d;
+  border-radius: 3px;
+  padding: 0 3px; }
+
+/******************************************************************************/
+/* Fonts */
+/******************************************************************************/
+body {
+  font-family: "Cochin";
+  font-size: 19px; }
+
+code, table {
+  font-family: "Andale Mono", monospace;
+  font-size: 17px; }
+
+#placeholder {
+  font-family: "Century Gothic", verdana, arial, helvetica, sans-serif; }
+
+.handwriting {
+  font-family: "Handwriting - Dakota", cursive, sans-serif; }
+
+/******************************************************************************/
+/* Layout */
+/******************************************************************************/
+body {
+  padding: 10px 20px; }
+
+h1, h2, h3, table {
+  margin: 7px 0 0 0; }
+
+th, td {
+  padding: 5px 5px; }
+
+pre {
+  margin: 5px 0; }
+
+/*# sourceMappingURL=panther.css.map */
