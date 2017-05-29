@@ -1,4 +1,9 @@
 # Darkily
 
-Darkily is a starter dark-themed css file aimed at anybody who prefers to look at dark screens.
+Tired of being blasted by white backgrounds on the web?
+
+Darkily is an easy on the eyes dark-themed style sheet just for you!  
+
+
+
 

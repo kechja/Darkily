@@ -53,22 +53,25 @@ $git_black:      rgb(15,15,23);
 $git_text:       rgb(177,187,195);
 
 // Panther
+$orange:         rgb(254,164,38);
 $text:           rgb(190,190,190);
 $danger:         rgb(240,93,79);
 
 body { background-color: $mol_black; color: $text; }
-h1 { color: white; }
-h2, h3, h4, h5, h6  { color: rgb(210,210,210); }
+h1, h4 { color: white; }
+h2, h5 { color: $mol_white; }
+h3, h6  { color: $mol_white; }
+// h2, h3, h4, h5, h6  { color: rgb(210,210,210); }
 pre { background-color: lighten($mol_black, 10%); color: lighten($text, 10%); border-radius: 10px; }
 code { background-color: lighten($mol_black, 10%); color: lighten($text, 10%); border-radius: 10px; padding: 0 5px; }
 th { text-decoration: underline; }
-tr:nth-child(odd) td { background-color: lighten($mol_black, 10%); }b
-.pop1 { color: $mol_orange; }
-.pop2 { color: $mol_yellow; }
-.pop3 { color: $mol_green; }
-.pop4 { color: $mol_blue; }
-.pop5 { color: $mol_magenta; }
-.pop6 { color: $mol_purple; }
+tr:nth-child(odd) td { background-color: lighten($mol_black, 10%); }
+.pop_orange { color: $mol_orange; }
+.pop_yellow { color: $mol_yellow; }
+.pop_green { color: $mol_green; }
+.pop_blue { color: $mol_blue; }
+.pop_magenta { color: $mol_magenta; }
+.pop_purple { color: $mol_purple; }
 
 $inline-border-radius:  3px;
 .success   { background-color: darken($mol_green, 10%);    color: $mol_black; border-radius: $inline-border-radius; padding: 0 3px; }
@@ -80,9 +83,30 @@ $inline-border-radius:  3px;
 /******************************************************************************/
 /* Fonts */
 /******************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville|Quicksand|Open+Sans|Space+Mono|Chivo');
+@import url('https://fonts.googleapis.com/css?family=Schoolbell');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT|Delicious|Roboto:100,300|Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
-body { font-family: "Cochin"; font-size: 19px; }
-code, table { font-family: "Andale Mono", monospace; font-size: 17px; }
+// body { font-family: "Anonymous Pro Bold"; }
+// body { font-family: "Roboto", sans-serif; }
+// body { font-family: "Open Sans"; }
+// body { font-family: "Space Mono"; }
+// body { font-family: 'Amatic SC', cursive; }
+// body { font-family: 'Dakota - Handwriting', cursive; }
+// body { font-family: "Open Sans"; }
+// body { font-family: "Delicious"; }
+// body { font-family: "Libre Baskerville"; }
+// body { font-family: "Cochin"; font-size: 19px; }
+// body { font-family: "Cochin"; font-size: 16px;  }
+// h1, h2, h3 { font-family: "Schoolbell";  }
+body { font-family: "Anonymous Pro", monospace;  }
+h1, h2, h3 { font-family: "Amatic SC"; }
+// h1, h2, h3 { font-family: "Old Standard TT"; }
+// h1, h2, h3 { font-family: "Schoolbell"; }
+h1 { font-size: 250%; }
+code { font-family: "Ubuntu Mono", monospace; font-size: 16px; }
 #placeholder { font-family: "Century Gothic", verdana, arial, helvetica, sans-serif; }
 .handwriting { font-family: "Handwriting - Dakota", cursive, sans-serif; }
 $big_font:     36px;
@@ -94,8 +118,10 @@ $small_font:   13px;
 /******************************************************************************/
 
 body { padding: 10px 20px; }
-h1, h2, h3, table { margin: 7px 0 0 0; }
-th, td { padding: 5px 5px; }
-pre { margin: 5px 0; }
-
-
+h1 { margin: 10px 0 0 0; }
+h2, h3 { margin: 20px 0 0 0; }
+table { margin: 10px 0 0 0; }
+th, td { padding: 0px 5px; }
+pre { display: inline-block; margin: 0; }
+ul { list-style: none; }
+li { margin-left: 20px; }
